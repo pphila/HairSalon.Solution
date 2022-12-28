@@ -2,6 +2,11 @@
   Layout="_Layout";
 }
 
-<h1>Welcome To Your Salon Hub</h1>
-<p>@Html.ActionLink("See all clients", "Index", "Clients")</p>
-<p>@Html.ActionLink("See Stylists", "Index", "Stylists")
+<h1>Welcome To Eau Claire's Salon Hub</h1>
+
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("See all clients", "Index", "Clients")</li>
+    <li>@Html.ActionLink("See Stylists", "Index", "Stylists")</li>
+  </ul>
+</nav>

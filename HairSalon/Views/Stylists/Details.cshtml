@@ -6,6 +6,15 @@
 @using HairSalon.Models
 
 <h2>Stylist Info</h2>
+
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Clients", "Index", "Clients")</li>
+    <li>@Html.ActionLink("Stylists", "Index")</li>
+  </ul>
+</nav>
+
 <hr>
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
@@ -26,4 +35,3 @@ else
 
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Back to Stylist List", "Index")</p>

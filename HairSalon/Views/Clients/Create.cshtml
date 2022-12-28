@@ -6,8 +6,17 @@
 
 <h2>Add A Client</h2>
 
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Clients", "Index")</li>
+    <li>@Html.ActionLink("Stylists", "Index", "Stylists")</li>
+  </ul>
+</nav>
+
 <p><strong>NOTE:</strong> Please make sure that there is at least 1 stylist added before a client can be added!</p>
 <p>Follow this @Html.ActionLink("Link", "Create", "Stylists") to add a stylist.</p>
+
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
@@ -24,5 +33,3 @@
   <br>
   <input type="submit" value="Add new Client"/>
 }
-
-<p>@Html.ActionLink("Show Clients", "Index")</p>

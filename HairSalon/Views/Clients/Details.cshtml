@@ -5,6 +5,15 @@
 @model HairSalon.Models.Client
 
 <h2>Client Details</h2>
+
+<nav class="navbar">
+  <ul>
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Clients", "Index")</li>
+    <li>@Html.ActionLink("Stylists", "Index", "Stylists")</li>
+  </ul>
+</nav>
+
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 <h4>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</h4>
 <h4>@Html.DisplayNameFor(model => model.Phone): @Html.DisplayFor(model => model.Phone)</h4>
@@ -12,4 +21,3 @@
 
 <p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
 <p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Back To List", "Index")</p>
