@@ -14,10 +14,12 @@
   </ul>
 </nav>
 
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
-<h4>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</h4>
-<h4>@Html.DisplayNameFor(model => model.Phone): @Html.DisplayFor(model => model.Phone)</h4>
-<h3>@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.Name)</h3>
+<div class="clientDetails">
+  <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+  <h4>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</h4>
+  <h4>@Html.DisplayNameFor(model => model.Phone): @Html.DisplayFor(model => model.Phone)</h4>
+  <h3>@Html.DisplayNameFor(model => model.Stylist): @Html.DisplayFor(model => model.Stylist.Name)</h3>
+</div>
 <hr/>
 
 <div class="bottomAction">
