@@ -1,11 +1,111 @@
 body {
   background-color: #181D31;
+  background-image: url(https://images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1436&q=80);
+  background-repeat: no-repeat;
+  background-position: center top;
   color: #678983;
   font-family: 'Asap Condensed', sans-serif;
 }
 
+/*navbar section*/
+.navbar {
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.navbar ul li {
+  font-size: 1.5rem;
+  padding: 10px 60px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #F0E9D2;
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+/*headers*/
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
+  text-shadow: 2px 1px 2px #75948f;
   margin: 20px;
+}
+
+h2 {
+  font-size: 3rem;
+  text-shadow: 2px 1px 2px #75948f;
+  margin: 15px;
+  margin-top: 25px;
+}
+
+h3 {
+  text-align: left;
+}
+
+h4 {
+  text-align: left;
+}
+
+/*body*/
+ul {
+  list-style: inside;
+}
+ul li {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #F0E9D2;
+}
+
+.details {
+  text-align: left;
+}
+
+.details li {
+  text-decoration: none;
+}
+.bottomAction {
+  font-size: 1.5rem;
+  display: grid;
+  margin: 10px 0px;
+  text-decoration: none;
+  color: #F0E9D2;
+}
+
+form {
+  padding: 5px;
+}
+
+form label {
+  padding: 4px;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #FEFCF3;
+  text-align: center;
 }

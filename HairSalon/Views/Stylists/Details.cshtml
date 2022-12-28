@@ -15,23 +15,26 @@
   </ul>
 </nav>
 
-<hr>
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
-@if (@Model.Clients.Count == 0)
-{
-  <h3>There are no stylists added yet, please add a stylist.</h3>
-}
-else
-{
-  <h3>Stylists:</h3>
-  <ul>
-    @foreach(Client client in Model.Clients)
-    {
-      <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
-    }
-  </ul>
-}
-
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+<div class="details">
+  @if (@Model.Clients.Count == 0)
+  {
+    <h3>There are no stylists added yet, please add a stylist.</h3>
+  }
+  else
+  {
+    <h3>Clients:</h3>
+    <ul>
+      @foreach(Client client in Model.Clients)
+      {
+        <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
+      }
+    </ul>
+  }
+</div>
+<hr/>
+<div class="bottomAction">
+  <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+  <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+</div>
